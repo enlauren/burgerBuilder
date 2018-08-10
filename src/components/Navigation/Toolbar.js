@@ -1,22 +1,12 @@
-import React from 'react';
-import classes from './Toolbar.css'
-import Logo from "../Logo";
-import NavigationItems from "./NavigationItems";
+import React from "react";
+import ToolbarItems from "./ToolbarItems";
 
-const Toolbar =(props) => {
+const Toolbar = props => {
     return (
-      <header className={classes.Toolbar}>
-        <div className={classes.topMenu} onClick={props.openSideDrawer}>MENU</div>
-        <div className={classes.Logo}>
-        <Logo />
+        <div className="header top-menu">
+            <ToolbarItems token={props.token} isAuth={props.isAuth} openSideDrawer={props.openSideDrawer} />
         </div>
-        <nav className={classes.DesktopOnly}>
-          <NavigationItems token={props.token} isAuth={props.isAuth} />
-        </nav>
-      </header>
-    )
-
-
-}
+    );
+};
 
 export default Toolbar;

@@ -1,0 +1,271 @@
+* {
+    font-size: 1rem;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url("./assets/media_background_2.jpg");
+    color: white;
+}
+
+/*   helpers     */
+
+.container-full {
+    width: 100%;
+}
+
+ul,
+li {
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: green;
+}
+
+i {
+    color: darkolivegreen;
+}
+
+a:hover {
+    color: green;
+}
+
+.col-1 {
+    width: 8.33%;
+}
+
+.col-2 {
+    width: 16.66%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.33%;
+}
+
+.col-5 {
+    width: 41.66%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.33%;
+}
+
+.col-8 {
+    width: 66.66%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.33%;
+}
+
+.col-11 {
+    width: 91.66%;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+/*      helpers    end   */
+
+/* vegie background  start */
+.inner-container {
+    width: 100%;
+    margin: auto;
+    max-width: 1400px;
+}
+
+.veg-1 {
+    position: absolute;
+    margin-top: 80px;
+    z-index: -1;
+    transform: rotate(-80deg);
+    opacity: 1;
+    margin-left: 60px;
+}
+
+.veg-2 {
+    position: absolute;
+    z-index: -1;
+    margin-top: 640px;
+    opacity: 0.8;
+}
+
+/* vegie backround end */
+
+.container {
+    width: 100%;
+    margin: 160px auto 160px auto;
+    max-width: 1086px;
+    min-height: 800px;
+    display: flex;
+    flex-direction: row;
+    box-shadow: 6px 4px 24px 8px rgba(0, 0, 0, 0.315);
+}
+
+/*             left container style start              */
+.container .left-col {
+    background-color: #27292b;
+    order: 1;
+    min-width: 170px;
+    white-space: nowrap;
+}
+
+.header-icon {
+    display: flex;
+    justify-content: center;
+}
+
+.burger-icon {
+    margin-top: 12px;
+}
+
+.burger-icon div {
+    display: inline-block;
+}
+.burger-icon span {
+    font-family: "Oswald", sans-serif;
+    color: whitesmoke;
+    vertical-align: super;
+    font-size: 3rem;
+    background: linear-gradient(to right, #fa8909, #eb1102 99%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.burger-icon img {
+    opacity: 0.9;
+    max-width: 58px;
+    max-height: 58px;
+}
+
+.side-wrapper ul {
+    display: flex;
+    align-content: space-between;
+    flex-direction: column;
+    margin-top: 42px;
+}
+
+.side-wrapper li {
+    vertical-align: middle;
+    text-align: center;
+}
+
+.side-wrapper li:hover {
+    background-color: rgb(143, 143, 143);
+    border-left: 3px solid orange;
+    border-right: 3px solid orange;
+}
+
+.side-wrapper li > a {
+    color: rgb(238, 238, 238);
+    padding: 0;
+    margin: 0;
+    font-size: 1.2rem;
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+}
+
+.header-side-top li,
+.header-side-bottom li {
+    padding: 14px;
+}
+
+/*        right container style start         */
+.container .right-col {
+    display: flex;
+    flex-direction: column;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    background-color: white;
+    order: 2;
+}
+
+.top-menu > ul {
+    display: flex;
+    justify-content: flex-end;
+    padding: 12px;
+    border-bottom: 2px solid #9aa0a7;
+}
+
+.top-menu > ul > li {
+    margin-right: 24px;
+}
+
+.fas {
+    padding-right: 6px;
+}
+
+.header-pattern {
+    padding: 2px;
+}
+.pattern {
+    background-image: url("./assets/rom_pattern_30.png");
+    background-repeat: repeat-x;
+    padding: 0;
+    margin: 0;
+    height: 60px;
+}
+
+/*          main content            */
+
+.main-content {
+    background-image: url("./assets/96_done.jpg");
+    background-repeat: no-repeat;
+    justify-content: center;
+    flex-wrap: wrap-reverse;
+    min-height: 500px;
+    height: 100%;
+    width: 100%;
+}
+
+.burgerBuilder {
+    display: flex;
+}
+
+.burgerGrafic {
+    display: flex;
+}

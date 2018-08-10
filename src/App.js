@@ -3,7 +3,7 @@ import { Route, Switch } from "react-router-dom";
 import Layout from "./hoc/Layout";
 import BurgerBuilder from "./containers/BurgerBuilder";
 import Checkout from "./containers/Checkout";
-import Orders from "./components/Orders/Orders";
+import UserAndOrders from "./components/Orders/UserAndOrders";
 import Auth from "./containers/Auth";
 import Logout from "./containers/Logout";
 import { connect } from "react-redux";
@@ -23,7 +23,7 @@ class App extends Component {
                     <Route path="/checkout" component={Checkout} />
                     <Route path="/refOrder" exact component={CheckoutFinish} />
                     {this.props.token ? (
-                        <Route path="/orders" component={Orders} />
+                        <Route path="/account" component={UserAndOrders} />
                     ) : (
                         <Route path="/auth" component={Auth} />
                     )}

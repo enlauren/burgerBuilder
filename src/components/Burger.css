@@ -1,4 +1,8 @@
 .Burger {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-end;
+    align-self: flex-end;
     width: 280px;
     margin: auto;
     height: 280px;
@@ -9,8 +13,26 @@
     overflow: hidden;
 }
 
+.burgerBuilder {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+
+.Burger p {
+    color: gray;
+}
+.burgerGrafic {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+
 @media (min-width: 500px) and (min-height: 400px) {
     .Burger {
+        display: flex;
+        flex-direction: column;
+        align-content: flex-end;
         width: 280px;
         height: 280px;
     }

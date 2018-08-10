@@ -1,29 +1,30 @@
 import React from "react";
 import Logo from "../../components/Logo";
 import NavigationItems from "./NavigationItems";
-import classes from "./SideDrawer.css";
 import BackDrop from "../BackDrop";
 import Auxi from "../../hoc/Auxi";
+import "./SideDrawer.css";
+import { NavLink } from "react-router-dom";
 
 const SideDrawer = props => {
-    let attachedClasses = [classes.SideDrawer, classes.Close];
+    let attachedClasses = ["left-col col-2 ", "Close"];
     if (props.open) {
-        attachedClasses = [classes.SideDrawer, classes.Open];
+        attachedClasses = ["left-col col-2 ", "Open"];
     }
 
     return (
         <Auxi>
             <BackDrop show={props.open} clicked={props.closed} />
             <div className={attachedClasses.join(" ")} onClick={props.closed}>
-                <div className={classes.Logo}>
-                    <Logo />
-                </div>
-                <nav>
-                    <NavigationItems
-                        token={props.token}
-                        isAuth={props.isAuth}
-                    />
-                </nav>
+                <ul className="header-icon">
+                    <li className="burger-icon">
+                        <NavLink exact to="/">
+                            <span>REACT</span>
+                            <Logo />
+                        </NavLink>
+                    </li>
+                </ul>
+                <NavigationItems token={props.token} isAuth={props.isAuth} />
             </div>
         </Auxi>
     );
